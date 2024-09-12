@@ -30,7 +30,7 @@ public class AdminAspect {
             //API 요청 시간
             long requestTime = System.currentTimeMillis();
             //요청 API URL
-            String requestUrl = request.getRequestURI();
+            String requestUrl = request.getRequestURL().toString();
             //요청한 사용자 ID
             Long userId = (Long) request.getAttribute("userId");
 
